@@ -1,0 +1,44 @@
+:Chinese
+CCTV
+
+:Geographic & Technology
+Animal Planet
+BBC Earth
+Smithsonian
+DW
+Discovery
+History Channel
+Love Nature
+NASA
+National Geographic
+
+:Kids
+Da Vinci
+PBS Kids
+Smithsonian
+
+:Movie
+Disney
+Cartoon Network
+Boomerang
+DreamWorks
+Hallmark
+Cinemax
+AXN
+
+:Japan
+NHK
+
+:Others
+ABC News Live
+AXN
+BBC
+Bloomberg
+CGTN
+CNBC
+CNN
+Euronews
+Fox News
+MSNBC
+PBS
+Sky News
