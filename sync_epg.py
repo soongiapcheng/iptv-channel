@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 def main():
     filter_file = "channels.txt"
     # A reliable public global EPG repository source
-    epg_source_url = "https://iptv-org.github.io/epg/guides/all.xml.gz" 
+    epg_source_url = "https://epg.pw/xmltv/feed.xml"
     output_xml = "family_epg.xml"
     output_gz = "family_epg.xml.gz"
 
