@@ -7,7 +7,6 @@ def main():
     filter_file = "channels.txt"
     output_file = "family.m3u"
     
-    # Default folder name if no colon header is found at the start of channels.txt
     current_target_group = "Other"
     
     if not os.path.exists(sources_file):
@@ -34,10 +33,13 @@ def main():
     else:
         print("channels.txt not found! Keeping all channels under 'Other' by default.")
 
+    # CRITICAL FIX: Sort keys by length (descending). 
+    # This ensures "BBC EARTH" is evaluated and matched BEFORE "BBC".
+    sorted_allowed_channels = sorted(channel_to_group_map.keys(), key=len, reverse=True)
+
     with open(sources_file, "r") as f:
         urls = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
-    # Dictionary layout to hold streams by group
     playlist_data = {}
     seen_streams = set()
     total_channels_count = 0
@@ -63,12 +65,12 @@ def main():
                                 channel_name = current_extinf.split(",")[-1].strip()
                                 channel_name_upper = channel_name.upper()
                                 
-                                # Match against your master channel map
                                 assigned_group = None
                                 if channel_to_group_map:
-                                    for allowed_name, target_folder in channel_to_group_map.items():
+                                    # Match against the length-sorted list to prevent substring hijacking
+                                    for allowed_name in sorted_allowed_channels:
                                         if allowed_name in channel_name_upper:
-                                            assigned_group = target_folder
+                                            assigned_group = channel_to_group_map[allowed_name]
                                             break
                                     
                                     if not assigned_group:
@@ -103,19 +105,15 @@ def main():
             print(f"Failed to fetch {url}: {e}")
 
     # --- SORTING LOGIC ---
-    # 1. Gather group names and sort them case-insensitively, keeping "Other" out for now
     all_groups = sorted([g for g in playlist_data.keys() if g.lower() != "other"], key=lambda s: s.lower())
     
-    # 2. Append "Other" to the very end if it exists in our data
     if "Other" in playlist_data or "other" in [g.lower() for g in playlist_data.keys()]:
         other_key = next((g for g in playlist_data.keys() if g.lower() == "other"), "Other")
         all_groups.append(other_key)
 
-    # 3. Compile final M3U file lines sequentially
     combined_lines = ["#EXTM3U\n"]
     
     for group in all_groups:
-        # NATURAL SORT FIX: Sort purely on lowercase string value so spaces work correctly
         sorted_channels = sorted(
             playlist_data[group], 
             key=lambda x: x[0].lower().strip()
