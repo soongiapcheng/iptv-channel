@@ -15,7 +15,6 @@ National Geographic
 :Kids
 Da Vinci
 PBS Kids
-Smithsonian
 
 :Movie
 Disney
@@ -31,7 +30,6 @@ NHK
 
 :Others
 ABC News Live
-AXN
 BBC
 Bloomberg
 CGTN
