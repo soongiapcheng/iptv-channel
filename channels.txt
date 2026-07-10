@@ -29,7 +29,6 @@ AXN
 NHK
 
 :Others
-ABC News Live
 BBC
 Bloomberg
 CGTN
