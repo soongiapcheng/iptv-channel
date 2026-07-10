@@ -2,9 +2,9 @@ name: Daily IPTV Channel Auto-Sync
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day (~8:00 AM Singapore Time)
+    # Runs at 00:00 UTC every day (~8:00 AM Singapore Time) 
     - cron: '0 0 * * *'
-  workflow_dispatch: # Allows you to trigger it manually via the Actions tab
+  [cite_start]workflow_dispatch: # Allows you to trigger it manually via the Actions tab 
 
 permissions:
   contents: write
@@ -14,21 +14,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        [cite_start]uses: actions/checkout@v5 [cite: 2]
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        [cite_start]uses: actions/setup-python@v6 [cite: 2]
         with:
-          python-version: '3.x'
+          [cite_start]python-version: '3.x' [cite: 2]
+
+      # Installs the async HTTP library required by the live channel validator
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
 
       - name: Run IPTV Sync Script
-        run: python sync_iptv.py
+        [cite_start]run: python sync_iptv.py [cite: 2]
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add family.m3u
-          # Commit only if the family.m3u file has changed to prevent workflow errors
-          git diff-index --quiet HEAD || git commit -m "Automated daily IPTV update for family list"
+          git config --global user.name "github-actions[bot]" 
+          git config --global user.email "github-actions[bot]@users.noreply.github.com" 
+          git add family.m3u 
+          # Commit only if the family.m3u file has changed to prevent workflow errors 
+          git diff-index --quiet HEAD || git commit -m "Automated daily IPTV update for family list" 
           git push
