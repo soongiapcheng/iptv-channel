@@ -21,20 +21,29 @@ jobs:
         with:
           python-version: '3.x'
 
-      # NEW STEP: Install asynchronous HTTP dependencies
+      # Installs asynchronous HTTP library required by the live channel validator
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install aiohttp
 
+      # Step 1: Fetch and validate streams, outputting family.m3u
       - name: Run IPTV Sync Script
         run: python sync_iptv.py
 
+      # Step 2: Download master EPG data and filter it, outputting family_epg.xml.gz
+      - name: Run EPG Mapping Script
+        run: python sync_epg.py
+
+      # Step 3: Track and push the generated assets back to GitHub
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add family.m3u
-          # Commit only if the family.m3u file has changed to prevent workflow errors
-          git diff-index --quiet HEAD || git commit -m "Automated daily IPTV update for family list"
+          
+          # Stage both output assets
+          git add family.m3u family_epg.xml.gz
+          
+          # Commit and push only if changes were detected to avoid empty commit failures
+          git diff-index --quiet HEAD || git commit -m "Automated daily IPTV playlist and EPG guide update"
           git push
