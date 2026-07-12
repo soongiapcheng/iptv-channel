@@ -25,6 +25,8 @@ https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 http://74.91.26.218:82/live/cctv4hd.m3u8
 #EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="Chinese",CCTV-4 Europe
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+#EXTINF:-1 tvg-id="CCTV4K.cn@HD" tvg-logo="https://i.imgur.com/fxusYlX.png" group-title="Chinese",CCTV-4K (1080p)
+http://198.204.240.250:82/live/cctv4k.m3u8
 #EXTINF:-1 tvg-id="CCTV6.cn@HD" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="Chinese",CCTV-6 (1080p)
 http://69.30.245.50/live/cctv6.m3u8
 #EXTINF:-1 tvg-id="CCTV7.cn@SD" tvg-logo="https://i.imgur.com/CKcPMQC.png" group-title="Chinese",CCTV-7 (720p)
@@ -59,6 +61,26 @@ http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTVWorldGeography.cn@SD" tvg-logo="https://i.imgur.com/V2ncOXi.png" group-title="Chinese",CCTV-World Geography (1080p)
 http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
+#EXTINF:-1 tvg-name="CCTV11" tvg-id="CCTV11" tvg-logo="https://tb.zbds.top/logo/CCTV11.png" group-title="Chinese", CCTV11
+http://112.27.235.94:8000/hls/12/index.m3u8
+#EXTINF:-1 tvg-name="CCTV13" tvg-id="CCTV13" tvg-logo="https://tb.zbds.top/logo/CCTV13.png" group-title="Chinese", CCTV13
+http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
+#EXTINF:-1 tvg-name="CCTV17" tvg-id="170" tvg-logo="https://tb.zbds.top/logo/CCTV17.png" group-title="Chinese", CCTV17
+http://123.130.84.106:8154/tsfile/live/0019_1.m3u8
+#EXTINF:-1 tvg-name="CCTV4K" tvg-id="CCTV4K" tvg-logo="https://tb.zbds.top/logo/CCTV4K.png" group-title="Chinese", CCTV4K
+http://vip1.xinketongxun.fun:8082/tsfile/live/1026_1.m3u8
+#EXTINF:-1 tvg-name="CCTV5+" tvg-id="114" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png" group-title="Chinese", CCTV5+
+http://123.130.84.106:8154/tsfile/live/0016_1.m3u8
+#EXTINF:-1 tvg-name="CCTV9" tvg-id="CCTV-9" tvg-logo="https://tb.zbds.top/logo/CCTV9.png" group-title="Chinese", CCTV9
+http://74.91.26.218:82/live/cctv9hd.m3u8
+#EXTINF:-1 tvg-name="CCTV世界地理" tvg-id="世界地理" tvg-logo="https://tb.zbds.top/logo/CCTV世界地理.png" group-title="Chinese", CCTV世界地理
+https://shcm-stream-cf1.stream.264788.xyz/cms001/ch00000090990000001620/index.m3u8?streamid=8a034b40397504e25b3775c772237996&streamkey=01vY5fRxC8VyKg4oq30vfikHXTCAKySLP29l6OG91kQlzDttHgzNLkUw5kivm3PfNsVHJv5FgdsPBYFYI2IWpt7tfRCuFHqLT2pvX67ubMds8jl2DHtvOh0&token=1775754349-4f33f4f84a4abeba-0-91687dc8c9325092efa1d00f330d2710
+#EXTINF:-1 tvg-name="CCTV央视台球" tvg-id="央视台球" tvg-logo="https://tb.zbds.top/logo/CCTV央视台球.png" group-title="Chinese", CCTV央视台球
+https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e0308ed017.m3u8
+#EXTINF:-1 tvg-name="CCTV第一剧场" tvg-id="第一剧场" tvg-logo="https://tb.zbds.top/logo/CCTV第一剧场.png" group-title="Chinese", CCTV第一剧场
+https://epg.pw/stream/6d7bf281e3d739806a73f5373acaa6e01988ec9739f5ac1355ce54b47a928472.m3u8
+#EXTINF:-1 tvg-name="CCTV风云足球" tvg-id="风云足球" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png" group-title="Chinese", CCTV风云足球
+https://epg.pw/stream/ac8062ec9484078061d3bef507c15a423ac57ae4144e3fcc4b0a198dd420f911.m3u8
 #EXTINF:-1 tvg-id="AsharqDiscovery.sa@SD" tvg-logo="https://i.imgur.com/Czxi7yk.png" group-title="Geographic & Technology",Asharq Discovery (1080p)
 https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="BBCEarth.uk@US" tvg-logo="https://i.imgur.com/nGSsUd4.png" group-title="Geographic & Technology",BBC Earth (1080p)
@@ -165,8 +187,6 @@ http://206.212.244.63/86/index.m3u8
 https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCAmerica.us@East" tvg-logo="https://i.imgur.com/pTiiPz0.png" group-title="Others",BBC America (720p)
 http://23.239.31.26:8989/bbcamerica/index.m3u8
-#EXTINF:-1 tvg-id="BBCAmerica.us@EastHD" tvg-logo="https://i.imgur.com/pTiiPz0.png" group-title="Others",BBC America East HD (720p)
-http://40.160.24.52/BBC_AMERICA/index.m3u8
 #EXTINF:-1 tvg-id="DoctorWhoClassic.us@US" tvg-logo="https://i.imgur.com/JIqJQQM.png" group-title="Others",BBC Doctor Who Classic (1080p)
 https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCFood.us@SD" tvg-logo="https://i.imgur.com/kcmHcSx.png" group-title="Others",BBC Food (1080p)
@@ -203,6 +223,8 @@ https://bloomberg.com/media-manifest/streams/us-event.m3u8
 https://bloomberg.com/media-manifest/streams/politics.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us@Plus" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Others",Bloomberg TV+ (2160p)
 https://d8975dc3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9CbG9vbWJlcmdUVlBsdXNfSExT/playlist.m3u8
+#EXTINF:-1 tvg-name="CGTN" tvg-id="CGTN" tvg-logo="https://tb.zbds.top/logo/CGTN.png" group-title="Others", CGTN
+https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 tvg-id="CGTN.cn@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/960px-CGTN.svg.png" group-title="Others",CGTN (1080p)
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-id="CGTNArabic.cn@SD" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="Others",CGTN Arabic (1080p) [Not 24/7]
@@ -215,6 +237,16 @@ https://amg01314-cgtn-amg01314c2-rakuten-us-1319.playouts.now.amagi.tv/cgtn-fr-r
 https://amg01314-amg01314c6-distrotv-us-10220.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnglobalbiz-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-id="CGTNRussian.cn@SD" tvg-logo="https://i.imgur.com/nDWkCmL.png" group-title="Others",CGTN Русский (1080p)
 https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
+#EXTINF:-1 tvg-name="CGTN俄语" tvg-id="CGTN俄语" tvg-logo="https://tb.zbds.top/logo/CGTN俄语.png" group-title="Others", CGTN俄语
+http://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd.m3u8
+#EXTINF:-1 tvg-name="CGTN法语" tvg-id="CGTN法语" tvg-logo="https://tb.zbds.top/logo/CGTN法语.png" group-title="Others", CGTN法语
+https://0472.org/hls/cgtnf.m3u8
+#EXTINF:-1 tvg-name="CGTN纪录" tvg-id="CGTN纪录" tvg-logo="https://tb.zbds.top/logo/CGTN纪录.png" group-title="Others", CGTN纪录
+https://0472.org/hls/cgtnd.m3u8
+#EXTINF:-1 tvg-name="CGTN西语" tvg-id="CGTN西语" tvg-logo="https://tb.zbds.top/logo/CGTN西语.png" group-title="Others", CGTN西语
+https://0472.org/hls/cgtnx.m3u8
+#EXTINF:-1 tvg-name="CGTN阿语" tvg-id="CGTN阿语" tvg-logo="https://tb.zbds.top/logo/CGTN阿语.png" group-title="Others", CGTN阿语
+https://0472.org/hls/cgtna.m3u8
 #EXTINF:-1 tvg-id="CNBCUK.uk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="Others",CNBC (1080p)
 https://amg01079-nbcuuk-amg01079c2-samsung-gb-1258.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CNBC.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="Others",CNBC (1080p)
@@ -281,3 +313,39 @@ https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3
 https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="WMPT222.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Create_TV_network_logo.svg/960px-Create_TV_network_logo.svg.png" group-title="Others",WMPT-DT2 (PBS Create)
 https://2-fss-1.streamhoster.com/pl_122/amlst:201814-2122456/playlist.m3u8
+#EXTINF:-1 tvg-name="上海卫视" tvg-id="上海卫视" tvg-logo="https://tb.zbds.top/logo/上海卫视.png" group-title="卫视频道", 上海卫视
+http://112.27.235.94:8000/hls/28/index.m3u8
+#EXTINF:-1 tvg-name="东方卫视" tvg-id="东方卫视" tvg-logo="https://tb.zbds.top/logo/东方卫视.png" group-title="卫视频道", 东方卫视
+https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8
+#EXTINF:-1 tvg-name="东方卫视4K" tvg-id="东方卫视4K" tvg-logo="https://tb.zbds.top/logo/东方卫视4K.png" group-title="卫视频道", 东方卫视4K
+https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 tvg-name="人间卫视" tvg-id="人间卫视" tvg-logo="https://tb.zbds.top/logo/人间卫视.png" group-title="卫视频道", 人间卫视
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
+#EXTINF:-1 tvg-name="农林卫视" tvg-id="4" tvg-logo="https://tb.zbds.top/logo/农林卫视.png" group-title="卫视频道", 农林卫视
+http://124.116.183.146:9901/tsfile/live/1004_1.m3u8
+#EXTINF:-1 tvg-name="厦门卫视" tvg-id="11" tvg-logo="https://tb.zbds.top/logo/厦门卫视.png" group-title="卫视频道", 厦门卫视
+http://183.11.239.36:808/hls/17/index.m3u8
+#EXTINF:-1 tvg-name="大湾区卫视" tvg-id="大湾区卫视" tvg-logo="https://tb.zbds.top/logo/大湾区卫视.png" group-title="卫视频道", 大湾区卫视
+http://222.128.55.152:9080/live/dwq.m3u8
+#EXTINF:-1 tvg-name="安多卫视" tvg-id="安多卫视" tvg-logo="https://tb.zbds.top/logo/安多卫视.png" group-title="卫视频道", 安多卫视
+https://liveout.xntv.tv/a65jur/96iln2.m3u8
+#EXTINF:-1 tvg-name="山西卫视" tvg-id="山西卫视" tvg-logo="https://tb.zbds.top/logo/山西卫视.png" group-title="卫视频道", 山西卫视
+http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
+#EXTINF:-1 tvg-name="广东卫视" tvg-id="53" tvg-logo="https://tb.zbds.top/logo/广东卫视.png" group-title="卫视频道", 广东卫视
+http://124.116.183.146:9901/tsfile/live/0125_1.m3u8
+#EXTINF:-1 tvg-name="广西卫视" tvg-id="广西卫视" tvg-logo="https://tb.zbds.top/logo/广西卫视.png" group-title="卫视频道", 广西卫视
+https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
+#EXTINF:-1 tvg-name="延边卫视" tvg-id="延边卫视" tvg-logo="https://tb.zbds.top/logo/延边卫视.png" group-title="卫视频道", 延边卫视
+http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#
+#EXTINF:-1 tvg-name="浙江卫视" tvg-id="56" tvg-logo="https://tb.zbds.top/logo/浙江卫视.png" group-title="卫视频道", 浙江卫视
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 tvg-name="海南卫视" tvg-id="116" tvg-logo="https://tb.zbds.top/logo/海南卫视.png" group-title="卫视频道", 海南卫视
+http://183.223.157.33:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="海峡卫视" tvg-id="3" tvg-logo="https://tb.zbds.top/logo/海峡卫视.png" group-title="卫视频道", 海峡卫视
+http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8
+#EXTINF:-1 tvg-name="深圳卫视" tvg-id="33" tvg-logo="https://tb.zbds.top/logo/深圳卫视.png" group-title="卫视频道", 深圳卫视
+http://124.116.183.146:9901/tsfile/live/0126_1.m3u8
+#EXTINF:-1 tvg-name="湖南卫视" tvg-id="湖南卫视" tvg-logo="https://tb.zbds.top/logo/湖南卫视.png" group-title="卫视频道", 湖南卫视
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 tvg-name="甘肃卫视" tvg-id="甘肃卫视" tvg-logo="https://tb.zbds.top/logo/甘肃卫视.png" group-title="卫视频道", 甘肃卫视
+http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
