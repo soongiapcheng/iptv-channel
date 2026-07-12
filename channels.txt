@@ -1,6 +1,9 @@
 :Chinese
 CCTV
 
+:卫视频道
+卫视
+
 :Geographic & Technology
 Animal Planet
 BBC Earth
